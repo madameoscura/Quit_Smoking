@@ -147,7 +147,7 @@ public class MainActivityListener implements View.OnClickListener, TextWatcher {
     }
 
 
-    public void doneDialog() {
+    private void doneDialog() {
         String noCigarettesDay = mainActivity.txt_noCigarettesDay.getText().toString();
         String nicotine = mainActivity.txt_nicotine.getText().toString();
         String tar = mainActivity.txt_tar.getText().toString();
