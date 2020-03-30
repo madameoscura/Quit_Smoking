@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Quit Smoking</string>
+    <string name="txt_smokingbehaviors">Former Smoking Behaviors</string>
+    <string name="txt_cigarettesday">Cigarettes/Day</string>
+    <string name="txt_nicotine">Nicotine (mg)</string>
+    <string name="txt_tar">Tar (mg)</string>
+    <string name="txt_carbonmonoxide">Carbon Monoxide (mg)</string>
+    <string name="txt_cigarettepack">Cigarettes/Pack</string>
+    <string name="txt_pricepack">Price/Pack (€)</string>
+    <string name="txt_yearssmoked">For how many years did you smoke?</string>
+    <string name="txt_datequitting">Date of Quitting</string>
+    <string name="hint_EnterDate">Enter Date</string>
+    <string name="btn_choose">Choose</string>
+</resources>
