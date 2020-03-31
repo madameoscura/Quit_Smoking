@@ -120,6 +120,7 @@ public class MainActivityListener implements View.OnClickListener, TextWatcher {
     }
 
     private void setQuittingDate() {
+        //choose date of quitting from calendar
         final Calendar cldr = Calendar.getInstance();
         int day = cldr.get(Calendar.DAY_OF_MONTH);
         int month = cldr.get(Calendar.MONTH);
@@ -133,6 +134,8 @@ public class MainActivityListener implements View.OnClickListener, TextWatcher {
                             mainActivity.txt_dateOfQuitting.setText(dayOfMonth + "." + (month + 1) + "." + year);
                     }
                 }, year, month, day);
+
+        //set maximum date to today
         picker.getDatePicker().setMaxDate(new Date().getTime());
         picker.show();
     }

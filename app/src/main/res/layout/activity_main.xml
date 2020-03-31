@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#3B6978"
     android:orientation="vertical"
     tools:context=".gui.MainActivity">
 
@@ -15,6 +16,7 @@
         android:layout_marginBottom="20dp"
         android:text="@string/txt_smokingbehaviors"
         android:textAlignment="center"
+        android:textColor="@android:color/white"
         android:textSize="24sp"
         android:textStyle="bold" />
 
@@ -30,6 +32,7 @@
             android:layout_weight="1"
             android:gravity="fill"
             android:text="@string/txt_cigarettesday"
+            android:textColor="@android:color/white"
             android:textSize="18sp" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -55,6 +58,7 @@
             android:gravity="center"
             android:text="12"
             android:textAlignment="center"
+            android:textColor="@android:color/white"
             android:textSize="18sp" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -88,6 +92,7 @@
             android:layout_weight="1"
             android:gravity="fill"
             android:text="@string/txt_nicotine"
+            android:textColor="@android:color/white"
             android:textSize="18sp" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -113,6 +118,7 @@
             android:gravity="center"
             android:text="12"
             android:textAlignment="center"
+            android:textColor="@android:color/white"
             android:textSize="18sp" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -145,6 +151,7 @@
             android:layout_weight="1"
             android:gravity="fill"
             android:text="@string/txt_tar"
+            android:textColor="@android:color/white"
             android:textSize="18sp" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -170,6 +177,7 @@
             android:gravity="center"
             android:text="12"
             android:textAlignment="center"
+            android:textColor="@android:color/white"
             android:textSize="18sp" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -203,6 +211,7 @@
             android:layout_weight="1"
             android:gravity="fill"
             android:text="@string/txt_carbonmonoxide"
+            android:textColor="@android:color/white"
             android:textSize="18sp" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -228,6 +237,7 @@
             android:gravity="center"
             android:text="12"
             android:textAlignment="center"
+            android:textColor="@android:color/white"
             android:textSize="18sp" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -261,6 +271,7 @@
             android:layout_weight="1"
             android:gravity="fill"
             android:text="@string/txt_pricepack"
+            android:textColor="@android:color/white"
             android:textSize="18sp" />
 
         <EditText
@@ -271,6 +282,7 @@
             android:ems="10"
             android:inputType="numberDecimal"
             android:textAlignment="center"
+            android:textColor="@android:color/white"
             android:textSize="18sp" />
     </LinearLayout>
 
@@ -287,6 +299,7 @@
             android:layout_weight="1"
             android:gravity="fill"
             android:text="@string/txt_cigarettepack"
+            android:textColor="@android:color/white"
             android:textSize="18sp" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -312,6 +325,7 @@
             android:gravity="center"
             android:text="12"
             android:textAlignment="center"
+            android:textColor="@android:color/white"
             android:textSize="18sp" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -345,6 +359,7 @@
             android:layout_weight="1"
             android:gravity="fill"
             android:text="@string/txt_yearssmoked"
+            android:textColor="@android:color/white"
             android:textSize="18sp" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -370,6 +385,7 @@
             android:gravity="center"
             android:text="12"
             android:textAlignment="center"
+            android:textColor="@android:color/white"
             android:textSize="18sp" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -402,6 +418,7 @@
             android:layout_weight="1"
             android:gravity="fill"
             android:text="@string/txt_datequitting"
+            android:textColor="@android:color/white"
             android:textSize="18sp" />
 
         <Button
@@ -421,6 +438,7 @@
             android:hint="@string/hint_EnterDate"
             android:inputType="date"
             android:textAlignment="center"
+            android:textColor="@android:color/white"
             android:textSize="18sp" />
     </LinearLayout>
 

@@ -11,4 +11,8 @@
     <string name="txt_datequitting">Date of Quitting</string>
     <string name="hint_EnterDate">Enter Date</string>
     <string name="btn_choose">Choose</string>
+    <string name="txt_sinceQuittingToSmoke">Since Quitting To Smoke</string>
+    <string name="txt_smokingHistory">Your Smoking History</string>
+    <string name="txt_toxinsNotInhaled">Toxins Not Inhaled</string>
+    <string name="txt_whatYouGetBack">What You Get Back</string>
 </resources>

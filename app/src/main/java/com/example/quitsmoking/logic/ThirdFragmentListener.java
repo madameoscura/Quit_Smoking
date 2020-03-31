@@ -49,14 +49,14 @@ public class ThirdFragmentListener implements View.OnClickListener, TextWatcher 
         switch (v.getId()) {
             case R.id.btnMinusNoCigarettesDay:
                 count = Integer.parseInt(thirdFragment.txt_noCigarettesDay.getText().toString()) - 1;
-                thirdFragment.txt_noCigarettesDay.setText(String.valueOf(count));
                 String noCigarettesDay = String.valueOf(count);
+                thirdFragment.txt_noCigarettesDay.setText(noCigarettesDay);
                 editor.putString(prefNoCigarettesDay, noCigarettesDay);
                 break;
             case R.id.btnPlusNoCigarettesDay:
                 count = Integer.parseInt(thirdFragment.txt_noCigarettesDay.getText().toString()) + 1;
-                thirdFragment.txt_noCigarettesDay.setText(String.valueOf(count));
                 noCigarettesDay = String.valueOf(count);
+                thirdFragment.txt_noCigarettesDay.setText(noCigarettesDay);
                 editor.putString(prefNoCigarettesDay, noCigarettesDay);
                 break;
             case R.id.btnMinusNicotine:
@@ -71,50 +71,50 @@ public class ThirdFragmentListener implements View.OnClickListener, TextWatcher 
                 break;
             case R.id.btnMinusTar:
                 count = Integer.parseInt(thirdFragment.txt_tar.getText().toString()) - 1;
-                thirdFragment.txt_tar.setText(String.valueOf(count));
                 String tar = String.valueOf(count);
+                thirdFragment.txt_tar.setText(tar);
                 editor.putString(prefTar, tar);
                 break;
             case R.id.btnPlusTar:
                 count = Integer.parseInt(thirdFragment.txt_tar.getText().toString()) + 1;
-                thirdFragment.txt_tar.setText(String.valueOf(count));
                 tar = String.valueOf(count);
+                thirdFragment.txt_tar.setText(tar);
                 editor.putString(prefTar, tar);
                 break;
             case R.id.btnMinusCarbonMonoxide:
                 count = Integer.parseInt(thirdFragment.txt_carbonMonoxide.getText().toString()) - 1;
-                thirdFragment.txt_carbonMonoxide.setText(String.valueOf(count));
                 String carbonMonoxide = String.valueOf(count);
+                thirdFragment.txt_carbonMonoxide.setText(carbonMonoxide);
                 editor.putString(prefCarbonMonoxide, carbonMonoxide);
                 break;
             case R.id.btnPlusCarbonMonoxide:
                 count = Integer.parseInt(thirdFragment.txt_carbonMonoxide.getText().toString()) + 1;
-                thirdFragment.txt_carbonMonoxide.setText(String.valueOf(count));
                 carbonMonoxide = String.valueOf(count);
+                thirdFragment.txt_carbonMonoxide.setText(carbonMonoxide);
                 editor.putString(prefCarbonMonoxide, carbonMonoxide);
                 break;
             case R.id.btnMinusNoCigarettesPack:
                 count = Integer.parseInt(thirdFragment.txt_noCigarettesPack.getText().toString()) - 1;
-                thirdFragment.txt_noCigarettesPack.setText(String.valueOf(count));
                 String noCigarettesPack = String.valueOf(count);
+                thirdFragment.txt_noCigarettesPack.setText(noCigarettesPack);
                 editor.putString(prefNoCigarettesPack, noCigarettesPack);
                 break;
             case R.id.btnPlusNoCigarettesPack:
                 count = Integer.parseInt(thirdFragment.txt_noCigarettesPack.getText().toString()) + 1;
-                thirdFragment.txt_noCigarettesPack.setText(String.valueOf(count));
                 noCigarettesPack = String.valueOf(count);
+                thirdFragment.txt_noCigarettesPack.setText(noCigarettesPack);
                 editor.putString(prefNoCigarettesPack, noCigarettesPack);
                 break;
             case R.id.btnMinusYearsSmoked:
                 count = Integer.parseInt(thirdFragment.txt_yearsSmoked.getText().toString()) - 1;
-                thirdFragment.txt_yearsSmoked.setText(String.valueOf(count));
                 String yearsSmoked = String.valueOf(count);
+                thirdFragment.txt_yearsSmoked.setText(yearsSmoked);
                 editor.putString(prefyearsSmoked, yearsSmoked);
                 break;
             case R.id.btnPlusYearsSmoked:
                 count = Integer.parseInt(thirdFragment.txt_yearsSmoked.getText().toString()) + 1;
-                thirdFragment.txt_yearsSmoked.setText(String.valueOf(count));
                 yearsSmoked = String.valueOf(count);
+                thirdFragment.txt_yearsSmoked.setText(yearsSmoked);
                 editor.putString(prefyearsSmoked, yearsSmoked);
                 break;
             case R.id.btnChoose:
@@ -135,8 +135,8 @@ public class ThirdFragmentListener implements View.OnClickListener, TextWatcher 
                 new DatePickerDialog.OnDateSetListener() {
                     @Override
                     public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
-                        thirdFragment.txt_dateOfQuitting.setText(dayOfMonth + "." + (month + 1) + "." + year);
                         String dateOfQuitting = dayOfMonth + "." + (month + 1) + "." + year;
+                        thirdFragment.txt_dateOfQuitting.setText(dateOfQuitting);
                         editor.putString(prefDateOfQuitting, dateOfQuitting);
                         editor.apply();
                     }
