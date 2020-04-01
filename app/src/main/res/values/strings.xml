@@ -15,4 +15,12 @@
     <string name="txt_smokingHistory">Your Smoking History</string>
     <string name="txt_toxinsNotInhaled">Toxins Not Inhaled</string>
     <string name="txt_whatYouGetBack">What You Get Back</string>
+    <string name="txt_timeframe">Time Frame</string>
+    <string name="txt_money">Money</string>
+    <string name="txt_perWeek">Per Week</string>
+    <string name="txt_perMonth">Per Month</string>
+    <string name="txt_perYear">Per Year</string>
+    <string name="txt_5Years">5 Years</string>
+    <string name="txt_10Years">10 Years</string>
+    <string name="txt_20Years">20 Years</string>
 </resources>

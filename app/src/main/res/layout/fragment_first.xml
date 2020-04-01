@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient"
     android:orientation="vertical"
     tools:context=".gui.SecondActivity">
 
@@ -13,7 +14,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/textView"
@@ -23,6 +24,7 @@
                 android:padding="10dp"
                 android:text="@string/txt_sinceQuittingToSmoke"
                 android:textAlignment="center"
+                android:textColor="@android:color/white"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -34,17 +36,61 @@
                 <TextView
                     android:id="@+id/textView12"
                     android:layout_width="match_parent"
-                    android:layout_height="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
                     android:layout_weight="1"
-                    android:text="Not smoking since:" />
+                    android:background="#5C5656"
+                    android:gravity="fill"
+                    android:padding="5dp"
+                    android:text="Not smoking since:"
+                    android:textColor="@android:color/white" />
 
                 <TextView
                     android:id="@+id/textView13"
                     android:layout_width="match_parent"
-                    android:layout_height="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
                     android:layout_weight="1"
-                    android:text="Money saved:" />
+                    android:background="#5C5656"
+                    android:gravity="fill"
+                    android:padding="5dp"
+                    android:text="Money saved:"
+                    android:textColor="@android:color/white" />
 
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_daysNotSmoked"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:background="#5C5656"
+                    android:gravity="fill"
+                    android:text="TextView"
+                    android:textColor="@android:color/white"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/txt_moneySaved"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:background="#5C5656"
+                    android:gravity="fill"
+                    android:padding="5dp"
+                    android:text="TextView"
+                    android:textColor="@android:color/white" />
             </LinearLayout>
 
             <LinearLayout
@@ -56,16 +102,62 @@
                 <TextView
                     android:id="@+id/textView14"
                     android:layout_width="match_parent"
-                    android:layout_height="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
                     android:layout_weight="1"
-                    android:text="Cigarettes not smoked" />
+                    android:background="#5C5656"
+                    android:gravity="fill"
+                    android:padding="5dp"
+                    android:text="Cigarettes not smoked:"
+                    android:textColor="@android:color/white" />
 
                 <TextView
                     android:id="@+id/textView15"
                     android:layout_width="match_parent"
-                    android:layout_height="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
                     android:layout_weight="1"
-                    android:text="Lifetime saved:" />
+                    android:background="#5C5656"
+                    android:gravity="fill"
+                    android:padding="5dp"
+                    android:text="Lifetime saved:"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_cigarettesNotSmoked"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:background="#5C5656"
+                    android:gravity="fill"
+                    android:padding="5dp"
+                    android:text="TextView"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/txt_lifetimeSaved"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:background="#5C5656"
+                    android:gravity="fill"
+                    android:padding="5dp"
+                    android:text="TextView"
+                    android:textColor="@android:color/white" />
             </LinearLayout>
 
             <TextView
@@ -73,9 +165,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
+                android:gravity="fill"
                 android:padding="10dp"
+                android:paddingLeft="5dp"
                 android:text="@string/txt_smokingHistory"
                 android:textAlignment="center"
+                android:textColor="@android:color/white"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -87,16 +182,33 @@
                 <TextView
                     android:id="@+id/txt_cigarettesConsumed"
                     android:layout_width="match_parent"
-                    android:layout_height="70dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
                     android:layout_weight="1"
-                    android:text="TextView" />
+                    android:background="#5C5656"
+                    android:gravity="fill"
+                    android:paddingLeft="5dp"
+                    android:text="TextView"
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white" />
 
                 <TextView
                     android:id="@+id/txt_moneyConsumed"
                     android:layout_width="match_parent"
-                    android:layout_height="70dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
                     android:layout_weight="1"
-                    android:text="TextView" />
+                    android:background="#5C5656"
+                    android:gravity="fill"
+                    android:paddingLeft="5dp"
+                    android:text="TextView"
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white" />
             </LinearLayout>
 
             <LinearLayout
@@ -107,16 +219,71 @@
                 <TextView
                     android:id="@+id/txt_timeConsumed"
                     android:layout_width="match_parent"
-                    android:layout_height="70dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
                     android:layout_weight="1"
-                    android:text="TextView" />
+                    android:background="#5C5656"
+                    android:gravity="fill"
+                    android:paddingLeft="5dp"
+                    android:text="TextView"
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white" />
 
                 <TextView
                     android:id="@+id/txt_TarConsumed"
                     android:layout_width="match_parent"
-                    android:layout_height="70dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
                     android:layout_weight="1"
-                    android:text="TextView" />
+                    android:background="#5C5656"
+                    android:gravity="fill"
+                    android:paddingLeft="5dp"
+                    android:text="TextView"
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_nicotineConsumed"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:background="#5C5656"
+                    android:gravity="fill"
+                    android:paddingLeft="5dp"
+                    android:text="TextView"
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/txt_carbonMonoxideConsumed"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:background="#5C5656"
+                    android:gravity="fill"
+                    android:paddingLeft="5dp"
+                    android:text="TextView"
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white" />
+
             </LinearLayout>
 
             <TextView
@@ -127,6 +294,7 @@
                 android:padding="10dp"
                 android:text="@string/txt_whatYouGetBack"
                 android:textAlignment="center"
+                android:textColor="@android:color/white"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -139,15 +307,30 @@
                     android:id="@+id/textView24"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
                     android:layout_weight="1"
-                    android:text="TextView" />
+                    android:background="#5C5656"
+                    android:gravity="fill"
+                    android:paddingLeft="5dp"
+                    android:text="@string/txt_timeframe"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/textView25"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
                     android:layout_weight="1"
-                    android:text="TextView" />
+                    android:background="#5C5656"
+                    android:gravity="fill"
+                    android:paddingLeft="5dp"
+                    android:text="@string/txt_money"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
             </LinearLayout>
 
             <LinearLayout
@@ -159,15 +342,28 @@
                     android:id="@+id/textView26"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
                     android:layout_weight="1"
-                    android:text="TextView" />
+                    android:background="#5C5656"
+                    android:gravity="fill"
+                    android:paddingLeft="5dp"
+                    android:text="@string/txt_perWeek"
+                    android:textColor="@android:color/white" />
 
                 <TextView
-                    android:id="@+id/textView37"
+                    android:id="@+id/txt_moneyPerWeek"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
                     android:layout_weight="1"
-                    android:text="TextView" />
+                    android:background="#5C5656"
+                    android:gravity="fill"
+                    android:paddingLeft="5dp"
+                    android:text="TextView"
+                    android:textColor="@android:color/white" />
             </LinearLayout>
 
             <LinearLayout
@@ -179,15 +375,28 @@
                     android:id="@+id/textView27"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
                     android:layout_weight="1"
-                    android:text="TextView" />
+                    android:background="#5C5656"
+                    android:gravity="fill"
+                    android:paddingLeft="5dp"
+                    android:text="@string/txt_perMonth"
+                    android:textColor="@android:color/white" />
 
                 <TextView
-                    android:id="@+id/textView36"
+                    android:id="@+id/txt_moneyPerMonth"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
                     android:layout_weight="1"
-                    android:text="TextView" />
+                    android:background="#5C5656"
+                    android:gravity="fill"
+                    android:paddingLeft="5dp"
+                    android:text="TextView"
+                    android:textColor="@android:color/white" />
             </LinearLayout>
 
             <LinearLayout
@@ -199,15 +408,28 @@
                     android:id="@+id/textView28"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
                     android:layout_weight="1"
-                    android:text="TextView" />
+                    android:background="#5C5656"
+                    android:gravity="fill"
+                    android:paddingLeft="5dp"
+                    android:text="@string/txt_perYear"
+                    android:textColor="@android:color/white" />
 
                 <TextView
-                    android:id="@+id/textView35"
+                    android:id="@+id/txt_moneyPerYear"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
                     android:layout_weight="1"
-                    android:text="TextView" />
+                    android:background="#5C5656"
+                    android:gravity="fill"
+                    android:paddingLeft="5dp"
+                    android:text="TextView"
+                    android:textColor="@android:color/white" />
             </LinearLayout>
 
             <LinearLayout
@@ -219,15 +441,28 @@
                     android:id="@+id/textView29"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
                     android:layout_weight="1"
-                    android:text="TextView" />
+                    android:background="#5C5656"
+                    android:gravity="fill"
+                    android:paddingLeft="5dp"
+                    android:text="@string/txt_5Years"
+                    android:textColor="@android:color/white" />
 
                 <TextView
-                    android:id="@+id/textView34"
+                    android:id="@+id/txt_moneyPer5Years"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
                     android:layout_weight="1"
-                    android:text="TextView" />
+                    android:background="#5C5656"
+                    android:gravity="fill"
+                    android:paddingLeft="5dp"
+                    android:text="TextView"
+                    android:textColor="@android:color/white" />
             </LinearLayout>
 
             <LinearLayout
@@ -239,15 +474,28 @@
                     android:id="@+id/textView30"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
                     android:layout_weight="1"
-                    android:text="TextView" />
+                    android:background="#5C5656"
+                    android:gravity="fill"
+                    android:paddingLeft="5dp"
+                    android:text="@string/txt_10Years"
+                    android:textColor="@android:color/white" />
 
                 <TextView
-                    android:id="@+id/textView33"
+                    android:id="@+id/txt_moneyPer10Years"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
                     android:layout_weight="1"
-                    android:text="TextView" />
+                    android:background="#5C5656"
+                    android:gravity="fill"
+                    android:paddingLeft="5dp"
+                    android:text="TextView"
+                    android:textColor="@android:color/white" />
             </LinearLayout>
 
             <LinearLayout
@@ -259,126 +507,28 @@
                     android:id="@+id/textView31"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
                     android:layout_weight="1"
-                    android:text="TextView" />
+                    android:background="#5C5656"
+                    android:gravity="fill"
+                    android:paddingLeft="5dp"
+                    android:text="@string/txt_20Years"
+                    android:textColor="@android:color/white" />
 
                 <TextView
-                    android:id="@+id/textView32"
+                    android:id="@+id/txt_moneyPer20Years"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
                     android:layout_weight="1"
-                    android:text="TextView" />
-            </LinearLayout>
-
-            <TextView
-                android:id="@+id/textView10"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:padding="10dp"
-                android:text="@string/txt_toxinsNotInhaled"
-                android:textAlignment="center"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textView38"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:layout_weight="1"
-                    android:text="TextView" />
-
-                <TextView
-                    android:id="@+id/textView39"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:layout_weight="1"
-                    android:text="TextView" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textView40"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:layout_weight="1"
-                    android:text="TextView" />
-
-                <TextView
-                    android:id="@+id/textView41"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:layout_weight="1"
-                    android:text="TextView" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textView42"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:layout_weight="1"
-                    android:text="TextView" />
-
-                <TextView
-                    android:id="@+id/textView43"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:layout_weight="1"
-                    android:text="TextView" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textView45"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:layout_weight="1"
-                    android:text="TextView" />
-
-                <TextView
-                    android:id="@+id/textView44"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:layout_weight="1"
-                    android:text="TextView" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textView47"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:layout_weight="1"
-                    android:text="TextView" />
-
-                <TextView
-                    android:id="@+id/textView46"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:layout_weight="1"
-                    android:text="TextView" />
+                    android:background="#5C5656"
+                    android:gravity="fill"
+                    android:paddingLeft="5dp"
+                    android:text="TextView"
+                    android:textColor="@android:color/white" />
             </LinearLayout>
 
         </LinearLayout>

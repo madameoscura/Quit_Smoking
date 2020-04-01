@@ -8,15 +8,14 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.quitsmoking.R;
 import com.example.quitsmoking.logic.MainActivityListener;
-import com.example.quitsmoking.models.MyPreferences;
+import com.example.quitsmoking.logic.Utility;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class MainActivity extends AppCompatActivity {
-    MyPreferences myPreferences;
+    Utility utility;
     MainActivityListener mainActivityListener;
 
     public TextView txt_noCigarettesDay, txt_nicotine, txt_tar, txt_carbonMonoxide, txt_pricePerPack, txt_noCigarettesPack, txt_yearsSmoked, txt_dateOfQuitting;
@@ -74,19 +73,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        /*   Boolean isFirstRun = getSharedPreferences("PREFERENCE", MODE_PRIVATE)
-                .getBoolean("isFirstRun", true);
 
-        if (!isFirstRun) {
-            //show start activity
-            startActivity(new Intent(MainActivity.this, SecondActivity.class));
-        }
-
-
-        getSharedPreferences("PREFERENCE", MODE_PRIVATE).edit()
-                .putBoolean("isFirstRun", false).commit(); */
-
-        boolean isFirstTime = MyPreferences.isFirst(MainActivity.this);
+        boolean isFirstTime = Utility.isFirst(MainActivity.this);
         if (isFirstTime == false) {
             final Intent intent = new Intent(this, SecondActivity.class);
             this.startActivity(intent);
