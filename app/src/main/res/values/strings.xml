@@ -23,4 +23,9 @@
     <string name="txt_5Years">5 Years</string>
     <string name="txt_10Years">10 Years</string>
     <string name="txt_20Years">20 Years</string>
+    <string name="txt_bloodpressure">Your blood pressure decreases</string>
+    <string name="txt_heartrate">Your heart rate decreases</string>
+    <string name="txt_bloodoxygen">Normal blood oxygen levels</string>
+    <string name="txt_skin">Healthier skin appearance</string>
+    <string name="txt_breath">Shortness of breath decreases</string>
 </resources>
