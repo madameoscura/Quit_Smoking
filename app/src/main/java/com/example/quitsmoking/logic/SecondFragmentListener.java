@@ -31,6 +31,10 @@ public class SecondFragmentListener {
         secondFragment.pb_skin.setProgress(utility.progressToRegenerate(dateOfQuitting, 31));
         //42 days for shortness of breath regeneration
         secondFragment.pb_breath.setProgress(utility.progressToRegenerate(dateOfQuitting, 42));
+        //365 days for 50% risk reduction of coronary heart diseases
+        secondFragment.pb_heartDisease.setProgress(utility.progressToRegenerate(dateOfQuitting, 365));
+        //1825 days (5 years) for 50% cancer risk reduction
+        secondFragment.pb_cancerRisk.setProgress(utility.progressToRegenerate(dateOfQuitting, 1825));
     }
 }
 

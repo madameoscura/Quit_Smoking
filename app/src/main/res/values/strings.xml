@@ -25,7 +25,8 @@
     <string name="txt_20Years">20 Years</string>
     <string name="txt_smelltaste">Your ability to smell and taste improves</string>
     <string name="txt_heartrate">Your heart rate decreases</string>
-    <string name="txt_bloodoxygen">Normal blood oxygen levels</string>
+    <string name="txt_heartDisease">50% risk reduction for coronary heart diseases</string>
     <string name="txt_skin">Healthier skin appearance</string>
     <string name="txt_breath">Shortness of breath decreases</string>
+    <string name="txt_cancerRisk">50% cancer risk reduction</string>
 </resources>
