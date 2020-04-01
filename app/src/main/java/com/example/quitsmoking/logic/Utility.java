@@ -113,4 +113,14 @@ public class Utility {
         String moneySavedRounded = df.format(moneySaved);
         return moneySavedRounded;
     }
+
+    public Integer progressToRegenerate(String oldDateString, Integer days) {
+        Integer progress = 0;
+        if (getDateDifference(oldDateString) < days) {
+        progress = (int)(Double.valueOf(getDateDifference(oldDateString)) / Double.valueOf(days) * 100) ;
+        } else if (getDateDifference(oldDateString) >= days) {
+            progress = 100;
+        }
+        return progress;
+    }
 }
