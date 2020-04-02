@@ -43,4 +43,6 @@
     <string name="txt_cigarettes">cigarettes</string>
     <string name="txt_mgtar">mg tar</string>
     <string name="txt_mgnicotine">mg nicotine</string>
+    <string name="doubleformat">0.9"</string>
+    <string name="doubleformattext">%.1f</string>
 </resources>
