@@ -2,8 +2,10 @@ package com.example.quitsmoking.logic;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.content.res.Resources;
 import android.util.Log;
 
+import com.example.quitsmoking.R;
 import com.example.quitsmoking.gui.FirstFragment;
 import com.example.quitsmoking.gui.ThirdFragment;
 
@@ -15,7 +17,6 @@ public class FirstFragmentListener {
     private FirstFragment firstFragment;
     private Utility utility;
     private SharedPreferences sharedPreferences;
-
     private static final String myPreference = "myPreference";
     private static final String prefNoCigarettesDay = "noCigarettesDayKey";
     private static final String prefNicotine = "nicotineKey";
@@ -45,17 +46,17 @@ public class FirstFragmentListener {
         Integer noCigarettesPack = Integer.valueOf(sharedPreferences.getString(prefNoCigarettesPack, ""));
         Integer yearsSmoked = Integer.valueOf(sharedPreferences.getString(prefyearsSmoked, ""));
 
-        firstFragment.txt_daysNotSmoked.setText(String.valueOf(utility.getDateDifference(dateOfQuitting)) + " days");
+        firstFragment.txt_daysNotSmoked.setText(String.valueOf(utility.getDateDifference(dateOfQuitting)) + " " + firstFragment.getActivity().getString(R.string.txt_days));
         firstFragment.txt_moneySaved.setText(String.valueOf(utility.moneySaved(dateOfQuitting, noCigarettesDay, pricePerPack, noCigarettesPack)) + " €");
         firstFragment.txt_cigarettesNotSmoked.setText(String.valueOf(utility.cigarettesNotSmoked(dateOfQuitting, noCigarettesDay)));
-        firstFragment.txt_lifetimeSaved.setText(String.valueOf(utility.lifetimeSaved(dateOfQuitting, noCigarettesDay)) + " minutes");
+        firstFragment.txt_lifetimeSaved.setText(String.valueOf(utility.lifetimeSaved(dateOfQuitting, noCigarettesDay)) + " " + firstFragment.getActivity().getString(R.string.txt_minutes));
 
-        firstFragment.txt_cigarettesConsumed.setText(String.valueOf(utility.noCigarettesSmoked(yearsSmoked, noCigarettesDay)) + " cigarettes");
+        firstFragment.txt_cigarettesConsumed.setText(String.valueOf(utility.noCigarettesSmoked(yearsSmoked, noCigarettesDay)) + " " + firstFragment.getActivity().getString(R.string.txt_cigarettes));
         firstFragment.txt_moneyConsumed.setText(utility.moneyConsumed(yearsSmoked, noCigarettesDay, pricePerPack, noCigarettesPack) + " €");
-        firstFragment.txt_timeConsumed.setText(String.valueOf(utility.minutesSmoked(yearsSmoked, noCigarettesDay)) + " minutes");
-        firstFragment.txt_TarConsumed.setText(String.valueOf(utility.tarConsumed(yearsSmoked, noCigarettesDay, tar)) + " mg tar");
+        firstFragment.txt_timeConsumed.setText(String.valueOf(utility.minutesSmoked(yearsSmoked, noCigarettesDay)) + " " + firstFragment.getActivity().getString(R.string.txt_minutes));
+        firstFragment.txt_TarConsumed.setText(String.valueOf(utility.tarConsumed(yearsSmoked, noCigarettesDay, tar)) + " " + firstFragment.getActivity().getString(R.string.txt_mgtar));
 
-        firstFragment.txt_nicotineConsumed.setText(utility.nicotineConsumed(yearsSmoked, noCigarettesDay, nicotine) + " mg nicotine");
+        firstFragment.txt_nicotineConsumed.setText(utility.nicotineConsumed(yearsSmoked, noCigarettesDay, nicotine) + " " + firstFragment.getActivity().getString(R.string.txt_mgnicotine));
 
         firstFragment.txt_carbonMonoxideConsumed.setText(String.valueOf(utility.carbonMonoxideConsumed(yearsSmoked, noCigarettesDay, carbonMonoxide)) + " mg CO");
 

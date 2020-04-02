@@ -34,8 +34,13 @@
     <string name="txt_settings">Settings</string>
     <string name="txt_quitsmoking">Quit Smoking</string>
     <string name="txt_done">Done</string>
-    <string name="txt_notsmokingsince">Not smoking since</string>
+    <string name="txt_notsmokingsince">Not smoking since:</string>
     <string name="txt_moneysaved">Money saved:</string>
     <string name="txt_cigarettesnotsmoked">Cigarettes not smoked:</string>
     <string name="txt_lifetimesaved">Lifetime saved:</string>
+    <string name="txt_days">days</string>
+    <string name="txt_minutes">minutes</string>
+    <string name="txt_cigarettes">cigarettes</string>
+    <string name="txt_mgtar">mg tar</string>
+    <string name="txt_mgnicotine">mg nicotine</string>
 </resources>
