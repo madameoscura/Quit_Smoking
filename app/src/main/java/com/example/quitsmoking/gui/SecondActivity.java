@@ -4,8 +4,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.FrameLayout;
 
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
@@ -21,6 +23,7 @@ import com.google.android.material.tabs.TabLayout;
 public class SecondActivity extends AppCompatActivity {
 
     SecondActivityListener secondActivityListener;
+    public Toolbar toolbar;
     FrameLayout simpleFrameLayout;
     TabLayout tabLayout;
     TabItem statisticsFragment, bodyFragment, settingsFragment;
@@ -30,6 +33,8 @@ public class SecondActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
 
+        toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
         simpleFrameLayout = findViewById(R.id.simpleFrameLayout);
         tabLayout = findViewById(R.id.simpleTabLayout);
         statisticsFragment= findViewById(R.id.tabItem_1);

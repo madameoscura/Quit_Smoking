@@ -37,12 +37,12 @@
                     android:id="@+id/textView12"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
                     android:layout_weight="1"
                     android:background="#777777"
                     android:gravity="fill"
                     android:padding="5dp"
-                    android:text="Not smoking since:"
+                    android:text="@string/txt_notsmokingsince"
                     android:textColor="@android:color/white" />
 
                 <TextView
@@ -55,7 +55,7 @@
                     android:background="#777777"
                     android:gravity="fill"
                     android:padding="5dp"
-                    android:text="Money saved:"
+                    android:text="@string/txt_moneysaved"
                     android:textColor="@android:color/white" />
 
             </LinearLayout>
@@ -69,13 +69,12 @@
                     android:id="@+id/txt_daysNotSmoked"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
                     android:layout_marginBottom="10dp"
                     android:layout_weight="1"
                     android:background="#777777"
                     android:gravity="fill"
                     android:padding="5dp"
-                    android:text="TextView"
                     android:textColor="@android:color/white" />
 
                 <TextView
@@ -89,26 +88,24 @@
                     android:background="#777777"
                     android:gravity="fill"
                     android:padding="5dp"
-                    android:text="TextView"
                     android:textColor="@android:color/white" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
                 android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/textView14"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
                     android:layout_weight="1"
                     android:background="#777777"
                     android:gravity="fill"
                     android:padding="5dp"
-                    android:text="Cigarettes not smoked:"
+                    android:text="@string/txt_cigarettesnotsmoked"
                     android:textColor="@android:color/white" />
 
                 <TextView
@@ -121,7 +118,7 @@
                     android:background="#777777"
                     android:gravity="fill"
                     android:padding="5dp"
-                    android:text="Lifetime saved:"
+                    android:text="@string/txt_lifetimesaved"
                     android:textColor="@android:color/white" />
 
             </LinearLayout>
@@ -129,20 +126,18 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
                 android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/txt_cigarettesNotSmoked"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
                     android:layout_marginBottom="10dp"
                     android:layout_weight="1"
                     android:background="#777777"
                     android:gravity="fill"
                     android:padding="5dp"
-                    android:text="TextView"
                     android:textColor="@android:color/white" />
 
                 <TextView
@@ -156,7 +151,6 @@
                     android:background="#777777"
                     android:gravity="fill"
                     android:padding="5dp"
-                    android:text="TextView"
                     android:textColor="@android:color/white" />
             </LinearLayout>
 
@@ -168,6 +162,7 @@
                 android:gravity="fill"
                 android:padding="10dp"
                 android:paddingLeft="5dp"
+                android:paddingRight="5dp"
                 android:text="@string/txt_smokingHistory"
                 android:textAlignment="center"
                 android:textColor="@android:color/white"
@@ -183,13 +178,13 @@
                     android:id="@+id/txt_cigarettesConsumed"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
                     android:layout_marginBottom="10dp"
                     android:layout_weight="1"
                     android:background="#777777"
                     android:gravity="fill"
                     android:paddingLeft="5dp"
-                    android:text="TextView"
+                    android:paddingRight="5dp"
                     android:textAlignment="viewStart"
                     android:textAllCaps="false"
                     android:textColor="@android:color/white" />
@@ -198,14 +193,14 @@
                     android:id="@+id/txt_moneyConsumed"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
                     android:layout_marginBottom="10dp"
                     android:layout_weight="1"
                     android:background="#777777"
                     android:gravity="fill"
                     android:paddingLeft="5dp"
-                    android:text="TextView"
+                    android:paddingRight="5dp"
                     android:textAlignment="viewStart"
                     android:textAllCaps="false"
                     android:textColor="@android:color/white" />
@@ -220,13 +215,13 @@
                     android:id="@+id/txt_timeConsumed"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
                     android:layout_marginBottom="10dp"
                     android:layout_weight="1"
                     android:background="#777777"
                     android:gravity="fill"
                     android:paddingLeft="5dp"
-                    android:text="TextView"
+                    android:paddingRight="5dp"
                     android:textAlignment="viewStart"
                     android:textAllCaps="false"
                     android:textColor="@android:color/white" />
@@ -235,14 +230,14 @@
                     android:id="@+id/txt_TarConsumed"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
                     android:layout_marginBottom="10dp"
                     android:layout_weight="1"
                     android:background="#777777"
                     android:gravity="fill"
                     android:paddingLeft="5dp"
-                    android:text="TextView"
+                    android:paddingRight="5dp"
                     android:textAlignment="viewStart"
                     android:textAllCaps="false"
                     android:textColor="@android:color/white" />
@@ -257,13 +252,13 @@
                     android:id="@+id/txt_nicotineConsumed"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
                     android:layout_marginBottom="10dp"
                     android:layout_weight="1"
                     android:background="#777777"
                     android:gravity="fill"
                     android:paddingLeft="5dp"
-                    android:text="TextView"
+                    android:paddingRight="5dp"
                     android:textAlignment="viewStart"
                     android:textAllCaps="false"
                     android:textColor="@android:color/white" />
@@ -272,14 +267,14 @@
                     android:id="@+id/txt_carbonMonoxideConsumed"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
                     android:layout_marginBottom="10dp"
                     android:layout_weight="1"
                     android:background="#777777"
                     android:gravity="fill"
                     android:paddingLeft="5dp"
-                    android:text="TextView"
+                    android:paddingRight="5dp"
                     android:textAlignment="viewStart"
                     android:textAllCaps="false"
                     android:textColor="@android:color/white" />
@@ -307,12 +302,13 @@
                     android:id="@+id/textView24"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
                     android:layout_marginBottom="10dp"
                     android:layout_weight="1"
                     android:background="#777777"
                     android:gravity="fill"
                     android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
                     android:text="@string/txt_timeframe"
                     android:textColor="@android:color/white"
                     android:textStyle="bold" />
@@ -321,13 +317,14 @@
                     android:id="@+id/textView25"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
                     android:layout_marginBottom="10dp"
                     android:layout_weight="1"
                     android:background="#777777"
                     android:gravity="fill"
                     android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
                     android:text="@string/txt_money"
                     android:textColor="@android:color/white"
                     android:textStyle="bold" />
@@ -342,12 +339,13 @@
                     android:id="@+id/textView26"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
                     android:layout_marginBottom="10dp"
                     android:layout_weight="1"
                     android:background="#777777"
                     android:gravity="fill"
                     android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
                     android:text="@string/txt_perWeek"
                     android:textColor="@android:color/white" />
 
@@ -355,14 +353,14 @@
                     android:id="@+id/txt_moneyPerWeek"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
                     android:layout_marginBottom="10dp"
                     android:layout_weight="1"
                     android:background="#777777"
                     android:gravity="fill"
                     android:paddingLeft="5dp"
-                    android:text="TextView"
+                    android:paddingRight="5dp"
                     android:textColor="@android:color/white" />
             </LinearLayout>
 
@@ -375,12 +373,13 @@
                     android:id="@+id/textView27"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
                     android:layout_marginBottom="10dp"
                     android:layout_weight="1"
                     android:background="#777777"
                     android:gravity="fill"
                     android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
                     android:text="@string/txt_perMonth"
                     android:textColor="@android:color/white" />
 
@@ -388,14 +387,14 @@
                     android:id="@+id/txt_moneyPerMonth"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
                     android:layout_marginBottom="10dp"
                     android:layout_weight="1"
                     android:background="#777777"
                     android:gravity="fill"
                     android:paddingLeft="5dp"
-                    android:text="TextView"
+                    android:paddingRight="5dp"
                     android:textColor="@android:color/white" />
             </LinearLayout>
 
@@ -408,12 +407,13 @@
                     android:id="@+id/textView28"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
                     android:layout_marginBottom="10dp"
                     android:layout_weight="1"
                     android:background="#777777"
                     android:gravity="fill"
                     android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
                     android:text="@string/txt_perYear"
                     android:textColor="@android:color/white" />
 
@@ -421,14 +421,14 @@
                     android:id="@+id/txt_moneyPerYear"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
                     android:layout_marginBottom="10dp"
                     android:layout_weight="1"
                     android:background="#777777"
                     android:gravity="fill"
                     android:paddingLeft="5dp"
-                    android:text="TextView"
+                    android:paddingRight="5dp"
                     android:textColor="@android:color/white" />
             </LinearLayout>
 
@@ -441,12 +441,13 @@
                     android:id="@+id/textView29"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
                     android:layout_marginBottom="10dp"
                     android:layout_weight="1"
                     android:background="#777777"
                     android:gravity="fill"
                     android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
                     android:text="@string/txt_5Years"
                     android:textColor="@android:color/white" />
 
@@ -454,14 +455,14 @@
                     android:id="@+id/txt_moneyPer5Years"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
                     android:layout_marginBottom="10dp"
                     android:layout_weight="1"
                     android:background="#777777"
                     android:gravity="fill"
                     android:paddingLeft="5dp"
-                    android:text="TextView"
+                    android:paddingRight="5dp"
                     android:textColor="@android:color/white" />
             </LinearLayout>
 
@@ -474,12 +475,13 @@
                     android:id="@+id/textView30"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
                     android:layout_marginBottom="10dp"
                     android:layout_weight="1"
                     android:background="#777777"
                     android:gravity="fill"
                     android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
                     android:text="@string/txt_10Years"
                     android:textColor="@android:color/white" />
 
@@ -487,14 +489,14 @@
                     android:id="@+id/txt_moneyPer10Years"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
                     android:layout_marginBottom="10dp"
                     android:layout_weight="1"
                     android:background="#777777"
                     android:gravity="fill"
                     android:paddingLeft="5dp"
-                    android:text="TextView"
+                    android:paddingRight="5dp"
                     android:textColor="@android:color/white" />
             </LinearLayout>
 
@@ -507,12 +509,13 @@
                     android:id="@+id/textView31"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
                     android:layout_marginBottom="20dp"
                     android:layout_weight="1"
                     android:background="#777777"
                     android:gravity="fill"
                     android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
                     android:text="@string/txt_20Years"
                     android:textColor="@android:color/white" />
 
@@ -520,14 +523,14 @@
                     android:id="@+id/txt_moneyPer20Years"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
                     android:layout_marginBottom="20dp"
                     android:layout_weight="1"
                     android:background="#777777"
                     android:gravity="fill"
                     android:paddingLeft="5dp"
-                    android:text="TextView"
+                    android:paddingRight="5dp"
                     android:textColor="@android:color/white" />
             </LinearLayout>
 

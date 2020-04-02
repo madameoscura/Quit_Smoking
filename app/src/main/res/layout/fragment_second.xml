@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#C5BFBF"
+    android:background="@drawable/gradientwhite"
     android:orientation="vertical"
     tools:context=".gui.SecondActivity">
 
@@ -25,7 +25,7 @@
                 android:layout_marginRight="10dp"
                 android:background="#777777"
                 android:padding="5dp"
-                android:text="@string/txt_heartrate"
+                android:text="@string/txt_nicotineinblood"
                 android:textColor="@android:color/white"
                 android:textSize="18sp" />
 
@@ -45,7 +45,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
                 android:layout_marginRight="10dp"
+                android:background="@android:color/white"
                 android:max="100"
                 android:progressTint="@color/ic_pb" />
 
@@ -78,7 +80,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
                 android:layout_marginRight="10dp"
+                android:background="@android:color/white"
                 android:max="100"
                 android:progressTint="@color/ic_pb" />
 
@@ -111,7 +115,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
                 android:layout_marginRight="10dp"
+                android:background="@android:color/white"
                 android:max="100"
                 android:progressTint="@color/ic_pb" />
 
@@ -144,7 +150,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
                 android:layout_marginRight="10dp"
+                android:background="@android:color/white"
                 android:max="100"
                 android:progressTint="@color/ic_pb" />
 
@@ -177,7 +185,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
                 android:layout_marginRight="10dp"
+                android:background="@android:color/white"
                 android:max="100"
                 android:progressTint="@color/ic_pb" />
 
@@ -210,8 +220,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="30dp"
+                android:background="@android:color/white"
                 android:progressTint="@color/ic_pb" />
 
         </LinearLayout>

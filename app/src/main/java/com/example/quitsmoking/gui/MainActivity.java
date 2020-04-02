@@ -1,6 +1,7 @@
 package com.example.quitsmoking.gui;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -18,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     Utility utility;
     MainActivityListener mainActivityListener;
 
+    public Toolbar toolbar_main;
     public TextView txt_noCigarettesDay, txt_nicotine, txt_tar, txt_carbonMonoxide, txt_pricePerPack, txt_noCigarettesPack, txt_yearsSmoked, txt_dateOfQuitting;
     public FloatingActionButton btnMinusNoCigarettesDay, btnPlusNoCigarettesDay, btnMinusNicotine, btnPlusNicotine, btnMinusTar, btnPlusTar, btnMinusCarbonMonoxide,
             btnPlusCarbonMonoxide, btnMinusNoCigarettesPack, btnPlusNoCigarettesPack, btnMinusYearsSmoked, btnPlusYearsSmoked;
@@ -28,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        toolbar_main = findViewById(R.id.toolbar_main);
+        setSupportActionBar(toolbar_main);
         txt_noCigarettesDay = findViewById(R.id.txt_noCigarettesDay);
         txt_nicotine = findViewById(R.id.txt_nicotine);
         txt_tar = findViewById(R.id.txt_tar);
@@ -74,11 +78,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
 
-        boolean isFirstTime = Utility.isFirst(MainActivity.this);
+  /*      boolean isFirstTime = Utility.isFirst(MainActivity.this);
         if (isFirstTime == false) {
             final Intent intent = new Intent(this, SecondActivity.class);
             this.startActivity(intent);
-        }
+        } */
     }
 
     @Override

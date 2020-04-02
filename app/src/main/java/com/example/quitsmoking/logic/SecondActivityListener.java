@@ -18,6 +18,7 @@ public class SecondActivityListener implements TabLayout.OnTabSelectedListener {
     public SecondActivityListener(SecondActivity secondActivity) {
         this.secondActivity = secondActivity;
         secondActivity.loadFragment(new FirstFragment());
+
     }
 
     @Override

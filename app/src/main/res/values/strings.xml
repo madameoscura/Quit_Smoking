@@ -24,9 +24,18 @@
     <string name="txt_10Years">10 Years</string>
     <string name="txt_20Years">20 Years</string>
     <string name="txt_smelltaste">Your ability to smell and taste improves</string>
-    <string name="txt_heartrate">Your heart rate decreases</string>
+    <string name="txt_nicotineinblood">No nicotine in blood</string>
     <string name="txt_heartDisease">50% risk reduction for coronary heart diseases</string>
     <string name="txt_skin">Healthier skin appearance</string>
     <string name="txt_breath">Shortness of breath decreases</string>
     <string name="txt_cancerRisk">50% cancer risk reduction</string>
+    <string name="txt_statistics">Statistics</string>
+    <string name="txt_body">Body</string>
+    <string name="txt_settings">Settings</string>
+    <string name="txt_quitsmoking">Quit Smoking</string>
+    <string name="txt_done">Done</string>
+    <string name="txt_notsmokingsince">Not smoking since</string>
+    <string name="txt_moneysaved">Money saved:</string>
+    <string name="txt_cigarettesnotsmoked">Cigarettes not smoked:</string>
+    <string name="txt_lifetimesaved">Lifetime saved:</string>
 </resources>

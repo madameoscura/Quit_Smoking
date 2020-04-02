@@ -7,6 +7,27 @@
     android:orientation="vertical"
     tools:context=".gui.SecondActivity">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#777777"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:titleTextColor="@android:color/white">
+
+        <TextView
+            android:id="@+id/pageTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/txt_quitsmoking"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/simpleTabLayout"
         android:layout_width="match_parent"
@@ -20,19 +41,19 @@
             android:id="@+id/tabItem_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Statistics" />
+            android:text="@string/txt_statistics" />
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/tabItem_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Body" />
+            android:text="@string/txt_body" />
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/tabItem_3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Settings" />
+            android:text="@string/txt_settings" />
     </com.google.android.material.tabs.TabLayout>
 
     <FrameLayout

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#3B6978"
+    android:background="@drawable/gradient"
     android:orientation="vertical"
     tools:context=".gui.SecondActivity">
 

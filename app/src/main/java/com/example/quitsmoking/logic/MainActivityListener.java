@@ -218,7 +218,14 @@ public class MainActivityListener implements View.OnClickListener, TextWatcher {
 
     private void hideSoftKeyboard() {
         InputMethodManager inputMethodManager = (InputMethodManager) mainActivity.getSystemService(Activity.INPUT_METHOD_SERVICE);
-        inputMethodManager.hideSoftInputFromWindow(mainActivity.getCurrentFocus().getWindowToken(), 0);
+
+        View focusedView = mainActivity.getCurrentFocus();
+
+        if (focusedView != null) {
+            inputMethodManager.hideSoftInputFromWindow(focusedView.getWindowToken(),
+                    InputMethodManager.HIDE_NOT_ALWAYS);
+        }
+     //   inputMethodManager.hideSoftInputFromWindow(mainActivity.getCurrentFocus().getWindowToken(), 0);
         mainActivity.txt_pricePerPack.setCursorVisible(false);
     }
 }
