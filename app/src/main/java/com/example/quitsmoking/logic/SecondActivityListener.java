@@ -1,10 +1,5 @@
 package com.example.quitsmoking.logic;
 
-import android.content.SharedPreferences;
-import android.util.Log;
-
-import androidx.fragment.app.Fragment;
-
 import com.example.quitsmoking.gui.FirstFragment;
 import com.example.quitsmoking.gui.SecondActivity;
 import com.example.quitsmoking.gui.SecondFragment;
@@ -23,8 +18,6 @@ public class SecondActivityListener implements TabLayout.OnTabSelectedListener {
 
     @Override
     public void onTabSelected(TabLayout.Tab tab) {
-        int position = tab.getPosition();
-       // Fragment fragment = null;
         switch (tab.getPosition()) {
             case 0:
                 secondActivity.loadFragment(new FirstFragment());
@@ -36,7 +29,6 @@ public class SecondActivityListener implements TabLayout.OnTabSelectedListener {
                 secondActivity.loadFragment(new ThirdFragment());
                 break;
         }
-        Log.e("Test", "position" + position);
     }
 
     @Override

@@ -78,11 +78,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
 
-  /*      boolean isFirstTime = Utility.isFirst(MainActivity.this);
+        boolean isFirstTime = Utility.isFirst(MainActivity.this);
         if (isFirstTime == false) {
             final Intent intent = new Intent(this, SecondActivity.class);
             this.startActivity(intent);
-        } */
+        }
     }
 
     @Override
