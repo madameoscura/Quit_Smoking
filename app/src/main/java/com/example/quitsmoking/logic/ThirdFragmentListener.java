@@ -11,8 +11,6 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.DatePicker;
 
 import com.example.quitsmoking.R;
-import com.example.quitsmoking.gui.MainActivity;
-import com.example.quitsmoking.gui.SecondActivity;
 import com.example.quitsmoking.gui.ThirdFragment;
 
 import java.util.Calendar;
@@ -126,7 +124,7 @@ public class ThirdFragmentListener implements View.OnClickListener, TextWatcher 
     }
 
     private void setQuittingDate() {
-        //set up calendar with todays date as maximum
+        //set up calendar with today's date as maximum
         final Calendar cldr = Calendar.getInstance();
         int day = cldr.get(Calendar.DAY_OF_MONTH);
         int month = cldr.get(Calendar.MONTH);
