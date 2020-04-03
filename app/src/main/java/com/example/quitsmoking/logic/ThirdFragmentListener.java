@@ -47,6 +47,7 @@ public class ThirdFragmentListener implements View.OnClickListener, TextWatcher 
         String nicotineCount;
 
         switch (v.getId()) {
+            //change values when buttons are clicked
             case R.id.btnMinusNoCigarettesDay:
                 count = Integer.parseInt(thirdFragment.txt_noCigarettesDay.getText().toString()) - 1;
                 String noCigarettesDay = String.valueOf(count);
@@ -125,6 +126,7 @@ public class ThirdFragmentListener implements View.OnClickListener, TextWatcher 
     }
 
     private void setQuittingDate() {
+        //set up calendar with todays date as maximum
         final Calendar cldr = Calendar.getInstance();
         int day = cldr.get(Calendar.DAY_OF_MONTH);
         int month = cldr.get(Calendar.MONTH);
@@ -178,6 +180,7 @@ public class ThirdFragmentListener implements View.OnClickListener, TextWatcher 
 
     @Override
     public void afterTextChanged(Editable s) {
+        //text watcher to only allow 2 decimal places
         if (thirdFragment.txt_pricePerPack.hasFocus()) {
             thirdFragment.txt_pricePerPack.setCursorVisible(true);
             String temp = s.toString();

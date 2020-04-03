@@ -15,19 +15,7 @@
         android:background="#777777"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
-        app:titleTextColor="@android:color/white">
-
-        <TextView
-            android:id="@+id/pageTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Quit Smoking"
-            android:textAlignment="center"
-            android:textColor="@android:color/white"
-            android:textSize="24sp"
-            android:textStyle="bold" />
-    </androidx.appcompat.widget.Toolbar>
+        app:titleTextColor="@android:color/white"/>
 
     <TextView
         android:id="@+id/txtMainHeading"

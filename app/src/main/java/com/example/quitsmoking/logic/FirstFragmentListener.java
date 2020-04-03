@@ -2,16 +2,11 @@ package com.example.quitsmoking.logic;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.content.res.Resources;
-import android.util.Log;
+
 
 import com.example.quitsmoking.R;
 import com.example.quitsmoking.gui.FirstFragment;
-import com.example.quitsmoking.gui.ThirdFragment;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 public class FirstFragmentListener {
     private FirstFragment firstFragment;
@@ -37,6 +32,7 @@ public class FirstFragmentListener {
     public void initializeSharedPrefs() {
         sharedPreferences = firstFragment.getActivity().getSharedPreferences(myPreference, Context.MODE_PRIVATE);
 
+        //get sharedPreferences
         String dateOfQuitting = sharedPreferences.getString(prefDateOfQuitting, "");
         Integer noCigarettesDay = Integer.valueOf(sharedPreferences.getString(prefNoCigarettesDay, ""));
         Double nicotine = Double.valueOf(sharedPreferences.getString(prefNicotine, ""));
@@ -46,6 +42,7 @@ public class FirstFragmentListener {
         Integer noCigarettesPack = Integer.valueOf(sharedPreferences.getString(prefNoCigarettesPack, ""));
         Integer yearsSmoked = Integer.valueOf(sharedPreferences.getString(prefyearsSmoked, ""));
 
+        //set Text in TextFields with utility formulas and shared preferences
         firstFragment.txt_daysNotSmoked.setText(String.valueOf(utility.getDateDifference(dateOfQuitting)) + " " + firstFragment.getActivity().getString(R.string.txt_days));
         firstFragment.txt_moneySaved.setText(String.valueOf(utility.moneySaved(dateOfQuitting, noCigarettesDay, pricePerPack, noCigarettesPack)) + " €");
         firstFragment.txt_cigarettesNotSmoked.setText(String.valueOf(utility.cigarettesNotSmoked(dateOfQuitting, noCigarettesDay)));

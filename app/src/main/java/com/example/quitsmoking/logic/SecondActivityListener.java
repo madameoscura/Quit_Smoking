@@ -18,6 +18,7 @@ public class SecondActivityListener implements TabLayout.OnTabSelectedListener {
 
     @Override
     public void onTabSelected(TabLayout.Tab tab) {
+        //load activity according to tab position
         switch (tab.getPosition()) {
             case 0:
                 secondActivity.loadFragment(new FirstFragment());

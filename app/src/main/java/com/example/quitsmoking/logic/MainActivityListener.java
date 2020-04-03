@@ -5,7 +5,6 @@ import android.app.DatePickerDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.res.Configuration;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.Menu;
@@ -18,10 +17,6 @@ import com.example.quitsmoking.R;
 import com.example.quitsmoking.gui.MainActivity;
 import com.example.quitsmoking.gui.SecondActivity;
 
-import java.text.DateFormat;
-import java.text.DecimalFormat;
-import java.text.NumberFormat;
-import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -39,9 +34,6 @@ public class MainActivityListener implements View.OnClickListener, TextWatcher {
     private static final String prefNoCigarettesPack = "noCigarettesPackKey";
     private static final String prefyearsSmoked = "yearsSmokedKey";
     private static final String prefDateOfQuitting = "dateOfQuittingKey";
-    //  DateFormat df = new SimpleDateFormat("dd.MM.yyyy");
-    //   String date = df.format(Calendar.getInstance().getTime());
-
 
     public MainActivityListener(MainActivity mainActivity) {
         this.mainActivity = mainActivity;
@@ -49,11 +41,9 @@ public class MainActivityListener implements View.OnClickListener, TextWatcher {
         mainActivity.txt_nicotine.setText(String.valueOf(0.9));
         mainActivity.txt_tar.setText(String.valueOf(10));
         mainActivity.txt_carbonMonoxide.setText(String.valueOf(14));
-    //    mainActivity.txt_pricePerPack.setText(String.valueOf(5.50));
         mainActivity.txt_noCigarettesPack.setText(String.valueOf(19));
         mainActivity.txt_yearsSmoked.setText(String.valueOf(1));
         mainActivity.txt_dateOfQuitting.setFocusable(false);
-        //     mainActivity.txt_dateOfQuitting.setText(String.valueOf(date));
         initializeSharedPrefs();
     }
 
@@ -61,8 +51,8 @@ public class MainActivityListener implements View.OnClickListener, TextWatcher {
     public void onClick(View v) {
         int count;
         String nicotineCount;
-        //  DecimalFormat df = new DecimalFormat("#.#");
 
+        //what happens when buttons are clicked
         switch (v.getId()) {
             case R.id.btnMinusNoCigarettesDay:
                 count = Integer.parseInt(mainActivity.txt_noCigarettesDay.getText().toString()) - 1;
@@ -73,7 +63,6 @@ public class MainActivityListener implements View.OnClickListener, TextWatcher {
                 mainActivity.txt_noCigarettesDay.setText(String.valueOf(count));
                 break;
             case R.id.btnMinusNicotine:
-                //         String.format("%.0f", doubleValue);
                 nicotineCount = String.format("%.1f", Double.parseDouble(mainActivity.txt_nicotine.getText().toString()) - 0.1);
                 mainActivity.txt_nicotine.setText(nicotineCount);
                 break;
@@ -142,11 +131,6 @@ public class MainActivityListener implements View.OnClickListener, TextWatcher {
 
     private void initializeSharedPrefs() {
         sharedPreferences = mainActivity.getSharedPreferences(myPreference, Context.MODE_PRIVATE);
-
-      /*  if (sharedPreferences.contains(prefName))
-            mainActivity.etName.setText(sharedPreferences.getString(prefName, ""));
-        if (sharedPreferences.contains(prefEmail))
-            mainActivity.etEmail.setText(sharedPreferences.getString(prefEmail, "")); */
     }
 
 
@@ -182,6 +166,7 @@ public class MainActivityListener implements View.OnClickListener, TextWatcher {
 
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
+            //what happens when done button is pressed
             case R.id.option_done:
                 doneDialog();
                 break;
@@ -199,6 +184,7 @@ public class MainActivityListener implements View.OnClickListener, TextWatcher {
 
     @Override
     public void afterTextChanged(Editable s) {
+        //TextWatcher to only allow two decimal places
         if (mainActivity.txt_pricePerPack.hasFocus()) {
             mainActivity.txt_pricePerPack.setCursorVisible(true);
             String temp = s.toString();
@@ -211,8 +197,8 @@ public class MainActivityListener implements View.OnClickListener, TextWatcher {
                 s.delete(posDot + 3, posDot + 4);
             }
         } else if(!mainActivity.txt_pricePerPack.hasFocus()) {
+            //hide keyboard when textfield loses focus
             hideSoftKeyboard();
-
         }
     }
 
@@ -225,7 +211,6 @@ public class MainActivityListener implements View.OnClickListener, TextWatcher {
             inputMethodManager.hideSoftInputFromWindow(focusedView.getWindowToken(),
                     InputMethodManager.HIDE_NOT_ALWAYS);
         }
-     //   inputMethodManager.hideSoftInputFromWindow(mainActivity.getCurrentFocus().getWindowToken(), 0);
         mainActivity.txt_pricePerPack.setCursorVisible(false);
     }
 }

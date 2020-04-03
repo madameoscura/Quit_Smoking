@@ -16,7 +16,6 @@ import com.example.quitsmoking.logic.Utility;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class MainActivity extends AppCompatActivity {
-    Utility utility;
     MainActivityListener mainActivityListener;
 
     public Toolbar toolbar_main;
@@ -77,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-
+//MainActivity only shows once during first launch
         boolean isFirstTime = Utility.isFirst(MainActivity.this);
         if (isFirstTime == false) {
             final Intent intent = new Intent(this, SecondActivity.class);
@@ -85,6 +84,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    //add option menu for Save-button
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         return mainActivityListener.onCreateOptionsMenu(menu);

@@ -29,7 +29,7 @@ public class SecondFragmentListener {
         secondFragment.pb_nicotineInBlood.setProgress(utility.progressToRegenerate(dateOfQuitting, 2));
         secondFragment.txt_nicotineInBlood.setText(String.valueOf(utility.progressToRegenerate(dateOfQuitting, 2)) + " %");
 
-
+        //progress bar should tur green, when progress equals 100
         if (secondFragment.pb_nicotineInBlood.getProgress() == 100) {
             secondFragment.pb_nicotineInBlood.setProgressTintList(ColorStateList.valueOf(Color.rgb(00,157,00)));
         }
@@ -37,6 +37,7 @@ public class SecondFragmentListener {
         secondFragment.pb_smelltaste.setProgress(utility.progressToRegenerate(dateOfQuitting, 2));
         secondFragment.txt_smelltaste.setText(String.valueOf(utility.progressToRegenerate(dateOfQuitting, 2)) + " %");
 
+        //progress bar should tur green, when progress equals 100
         if (secondFragment.pb_smelltaste.getProgress() == 100) {
             secondFragment.pb_smelltaste.setProgressTintList(ColorStateList.valueOf(Color.rgb(00,157,00)));
         }
