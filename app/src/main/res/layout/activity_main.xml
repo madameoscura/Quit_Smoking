@@ -436,7 +436,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="@string/btn_choose"
-            android:textSize="12sp" />
+            android:textSize="12sp"
+            android:background="@drawable/allroundedcornersbutton"/>
 
         <EditText
             android:id="@+id/txt_dateOfQuitting"
